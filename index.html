@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="auds.css">
 </head>
-
-<body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+<body style="margin:0; background:#303; color:#959; overflow:hidden;" onLoad="init();" onresize="onResize()">
+<script src="auds.js"></script>
+<div id="content">
+  <input type="file" id="thefile" accept="audio/*" />
+  <canvas id="canvas"></canvas>
+  <audio id="audio" controls></audio>
+<div class="blurb">Choose an audio file to visualise. There's no upload or download, it just plays local files. Mouse position sets the speed and height of colour cycling and bounce</div>
+</div>
 </body>
-</html>
